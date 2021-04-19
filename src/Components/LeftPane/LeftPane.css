@@ -1,0 +1,30 @@
+.leftPane {
+  width: 20%;
+  height: 100%;
+  text-align: left;
+  /* border: 1px solid black; */
+  background: #343951;
+  padding-left: 2%;
+  color: #d0d6db;
+  cursor: default;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+.leftPane_buttons {
+  font-size: 18px;
+}
+.leftPane_buttons_button {
+  margin: 8%;
+  opacity: 0.6;
+}
+.leftPane_buttons_button:hover {
+  opacity: 1;
+  /* background: rgb(5, 40, 65); */
+  border-right: 5px solid white;
+}
+
+.leftPane_new {
+  position: absolute;
+  bottom: 25%;
+}
