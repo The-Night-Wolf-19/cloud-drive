@@ -31,10 +31,3 @@
   height: 100%;
   object-fit: contain; */
 }
-
-.rightPane {
-  width: 25%;
-  height: 100%;
-  /* border: 1px solid white; */
-  background-color: #343951;
-}

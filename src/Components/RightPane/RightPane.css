@@ -1,0 +1,63 @@
+.rightPane {
+  width: 25%;
+  height: 100%;
+  /* border: 1px solid white; */
+  background-color: #343951;
+  color: #d0d6db;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  cursor: default;
+  overflow: visible;
+}
+.rightPane_user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.bell_icon:hover {
+  background-color: white;
+  color: #343951;
+}
+.settings_icon:hover {
+  background-color: white;
+  color: #343951;
+}
+.user_circle {
+  position: relative;
+  top: 16%;
+}
+.user_circle:hover {
+  background-color: white;
+  color: #343951;
+}
+.storage_upgrade {
+  position: absolute;
+  bottom: 10%;
+  height: 30%;
+  width: 23%;
+  background-color: #005288;
+  box-shadow: 5px 5px 4px 5px black;
+}
+.storage_upgrade:hover {
+  right: 3.5%;
+  bottom: 12%;
+  box-shadow: 7px 7px 6px 7px black;
+  opacity: 0.85;
+}
+.storage_heading {
+  font-size: 30px;
+  margin: 0%;
+}
+/* .storage_button {
+  background-color: black;
+  outline: none;
+} */
+.storage_used {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

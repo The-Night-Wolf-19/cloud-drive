@@ -3,6 +3,7 @@ import "./App.css";
 import IconAnimation from "./Components/iconAnimation/iconAnimation";
 import LeftPane from "./Components/LeftPane/LeftPane";
 import MiddlePane from "./Components/MiddlePane/MiddlePane";
+import RightPane from "./Components/RightPane/RightPane";
 
 // const LeftPane = () => {
 //   return (
@@ -46,7 +47,7 @@ function App() {
       <div className="Dashboard">
         <LeftPane />
         <MiddlePane />
-        <div className="rightPane"></div>
+        <RightPane />
       </div>
     </div>
   );
