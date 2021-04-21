@@ -1,7 +1,48 @@
 import React from "react";
 import "./RightPane.css";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-// import bg from "./bg.jpg";
+import { Chart } from "react-google-charts";
+const chartOptions = {
+  pieHole: 0.6,
+  slices: [
+    {
+      color: "#2BB673",
+    },
+    {
+      color: "#d91e48",
+    },
+    {
+      color: "#007fad",
+    },
+    {
+      color: "#e9a227",
+    },
+    {
+      color: "grey",
+    },
+  ],
+  legend: {
+    position: "right",
+    alignment: "center",
+    textStyle: {
+      color: "#d0d6db",
+      fontSize: 12,
+    },
+  },
+  tooltip: {
+    showColorCode: true,
+  },
+  chartArea: {
+    left: 10,
+    top: 10,
+    width: "100%",
+    height: "60%",
+  },
+  fontName: "Roboto",
+  backgroundColor: "none",
+  // title: "Storage",
+};
+
 const RightPane = () => {
   return (
     <div className="rightPane">
@@ -18,15 +59,24 @@ const RightPane = () => {
       </div>
       <hr />
       <div className="storage_detail">
-        <div>
-          <span className="storage_used">Total Storage:</span>
-          <span>50 Gb</span>
-        </div>
-        <div className="storage_used">
-          <span>Storage Used:</span>
-
-          <span>20 Gb</span>
-        </div>
+        <h2 className="storage_detail_heading">Storage</h2>
+        <Chart
+          width={"100%"}
+          height={"300px"}
+          chartType="PieChart"
+          loader={<div>Loading Chart</div>}
+          data={[
+            ["File Type", "Storage Used"],
+            ["Images", 40],
+            ["Videos", 10],
+            ["Documents", 20],
+            ["Others", 10],
+            ["Unused", 20],
+          ]}
+          options={chartOptions}
+          rootProps={{ "data-testid": "1" }}
+        />
+        <p className="storage_detail_desc">16 Gb of 20 Gb used</p>
       </div>
       <div className="storage_upgrade">
         <p className="storage_heading">Get more space</p>
