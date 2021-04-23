@@ -10,7 +10,9 @@
   width: 15%;
   min-width: 15%;
   max-width: 15%;
-  flex-wrap: wrap;
+  /* min-height: 20%;
+  max-height: 20%; */
+  /* flex-wrap: wrap; */
   /* height: 15%; */
   /* margin-right: 0.5%; */
   color: #005288;
@@ -35,4 +37,10 @@
 .card_image {
   /* height: 15%; */
   width: 65%;
+  /* padding-top: 1%; */
+  /* height: 50%; */
 }
+/* .card_folder_desc {
+  position: relative;
+  bottom: 1%;
+} */

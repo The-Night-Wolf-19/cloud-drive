@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import loginbg from "./loginbg.png";
+import sarvvid from "../../Asset/sarvvid.png";
 // import loginbg from "./loginbg1.jpg";
 
 // 3 columns
@@ -14,6 +15,7 @@ import loginbg from "./loginbg.png";
 
 const Login = (props) => {
   const [userId, setUserId] = useState("");
+  const [disableUserId, setDisableUserId] = useState(false);
   const [showGetDetails, setShowGetDetails] = useState(true);
   const [showLoginContainer, setShowLoginContainer] = useState(false);
   const [authToken, setAuthToken] = useState("");
@@ -21,17 +23,30 @@ const Login = (props) => {
   return (
     <div className="LoginPage">
       <img className="loginBg" src={loginbg} alt=""></img>
+      <img className="loginLogo" src={sarvvid} alt="Sarvvid AI" />
       <div className="login_form">
         <div className="form">
-          <input
-            type="text"
-            name="User Id"
-            required
-            autoCapitalize={false}
-            autoComplete="off"
-            value={userId}
-            onChange={(e) => setUserId(e.target.value)}
-          />
+          {disableUserId ? (
+            <input
+              type="text"
+              name="User Id"
+              required
+              autoCapitalize={false}
+              autoComplete="off"
+              value={userId}
+              disabled
+            />
+          ) : (
+            <input
+              type="text"
+              name="User Id"
+              required
+              autoCapitalize={false}
+              autoComplete="off"
+              value={userId}
+              onChange={(e) => setUserId(e.target.value)}
+            />
+          )}
           <label htmlFor="User Id" className="label">
             <span className="login_content">User ID</span>
           </label>
@@ -41,6 +56,7 @@ const Login = (props) => {
             className="login_button"
             onClick={() => {
               setShowLoginContainer(true);
+              setDisableUserId(true);
               setShowGetDetails(false);
             }}
           >

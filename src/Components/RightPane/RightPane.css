@@ -29,12 +29,20 @@
 .user_circle {
   position: relative;
   top: 16%;
+  /* margin-right: 0.5%; */
 }
 .user_circle:hover {
   background-color: white;
   color: #343951;
 }
-
+.user_logout {
+  position: relative;
+  top: 16%;
+}
+.user_logout:hover {
+  background-color: white;
+  color: #343951;
+}
 .storage_detail_heading {
   text-align: left;
 }

@@ -4,13 +4,13 @@ import LeftPane from "./Components/LeftPane/LeftPane";
 import MiddlePane from "./Components/MiddlePane/MiddlePane";
 import RightPane from "./Components/RightPane/RightPane";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <div className="Dashboard">
         <LeftPane />
         <MiddlePane />
-        <RightPane />
+        <RightPane logout={props.logout} />
       </div>
     </div>
   );

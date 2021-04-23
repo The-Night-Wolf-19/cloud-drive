@@ -5,7 +5,13 @@ import Login from "../Login/Login";
 const LandingPage = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   return (
-    <div>{loggedIn ? <App /> : <Login click={() => setLoggedIn(true)} />}</div>
+    <div>
+      {loggedIn ? (
+        <App logout={() => setLoggedIn(false)} />
+      ) : (
+        <Login click={() => setLoggedIn(true)} />
+      )}
+    </div>
   );
 };
 

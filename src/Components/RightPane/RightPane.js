@@ -2,6 +2,7 @@ import React from "react";
 import "./RightPane.css";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import { Chart } from "react-google-charts";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 const chartOptions = {
   pieHole: 0.6,
   slices: [
@@ -18,6 +19,7 @@ const chartOptions = {
   tooltip: {
     showColorCode: true,
   },
+  pieSliceBorderColor: "#343951",
   chartArea: {
     left: 10,
     top: 10,
@@ -30,7 +32,7 @@ const chartOptions = {
   // title: "Storage",
 };
 
-const RightPane = () => {
+const RightPane = (props) => {
   return (
     <div className="rightPane">
       <div className="rightPane_user">
@@ -42,6 +44,7 @@ const RightPane = () => {
         <div className="user_info">
           <span className="username">Shubham&nbsp;</span>
           <AccountCircleIcon className="user_circle" />
+          <ExitToAppIcon className="user_logout" onClick={props.logout} />
         </div>
       </div>
       <hr />
