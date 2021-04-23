@@ -9,6 +9,7 @@ import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import AddBoxIcon from "@material-ui/icons/AddBox";
 import CreateNewFolderIcon from "@material-ui/icons/CreateNewFolder";
+import { NavigateBeforeSharp } from "@material-ui/icons";
 
 const StyledMenu = withStyles({
   paper: {
@@ -41,7 +42,7 @@ const StyledMenuItem = withStyles((theme) => ({
   },
 }))(MenuItem);
 
-export default function CustomizedMenus() {
+export default function CustomizedMenus(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -61,7 +62,7 @@ export default function CustomizedMenus() {
         color="primary"
         onClick={handleClick}
       >
-        Create New &nbsp;
+        {props.btnSize === "short" ? "" : <span>Create New&nbsp;</span>}
         <AddBoxIcon fontSize="small" />
       </Button>
       <StyledMenu

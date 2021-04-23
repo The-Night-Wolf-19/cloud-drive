@@ -9,25 +9,11 @@ const chartOptions = {
       color: "#2BB673",
     },
     {
-      color: "#d91e48",
-    },
-    {
-      color: "#007fad",
-    },
-    {
-      color: "#e9a227",
-    },
-    {
       color: "grey",
     },
   ],
   legend: {
-    position: "right",
-    alignment: "center",
-    textStyle: {
-      color: "#d0d6db",
-      fontSize: 12,
-    },
+    position: "none",
   },
   tooltip: {
     showColorCode: true,
@@ -35,8 +21,9 @@ const chartOptions = {
   chartArea: {
     left: 10,
     top: 10,
+    bottom: 10,
     width: "100%",
-    height: "60%",
+    height: "100%",
   },
   fontName: "Roboto",
   backgroundColor: "none",
@@ -62,20 +49,18 @@ const RightPane = () => {
         <h2 className="storage_detail_heading">Storage</h2>
         <Chart
           width={"100%"}
-          height={"300px"}
+          height={"200px"}
           chartType="PieChart"
           loader={<div>Loading Chart</div>}
           data={[
-            ["File Type", "Storage Used"],
-            ["Images", 40],
-            ["Videos", 10],
-            ["Documents", 20],
-            ["Others", 10],
+            ["Storage Status", "Size"],
+            ["Used", 80],
             ["Unused", 20],
           ]}
           options={chartOptions}
           rootProps={{ "data-testid": "1" }}
         />
+        <p className="storage_total">20 Gb</p>
         <p className="storage_detail_desc">16 Gb of 20 Gb used</p>
       </div>
       <div className="storage_upgrade">

@@ -38,10 +38,24 @@
 .storage_detail_heading {
   text-align: left;
 }
+.storage_total {
+  /* position: absolute;
+  top: 28.5%; */
+  font-size: 24px;
+  /* right: 15.5%; */
+  text-align: center;
+  opacity: 0.8;
+  z-index: 2;
+  position: relative;
+  top: -138px;
+  left: 1%;
+}
 .storage_detail_desc {
-  position: absolute;
-  top: 48%;
-  right: 14%;
+  position: relative;
+  top: -80px;
+  left: 1.5%;
+  z-index: 2;
+  position: relative;
   font-size: 12px;
   text-align: center;
   opacity: 0.8;
