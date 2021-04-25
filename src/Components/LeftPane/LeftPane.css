@@ -2,9 +2,11 @@
   width: 5%;
   height: 100%;
   text-align: left;
-  background: #343951;
+  /* background: #343951; */
+  background-color: var(--primary-color);
   padding-left: 1%;
-  color: #d0d6db;
+  /* color: #d0d6db; */
+  color: white;
   cursor: default;
 }
 
@@ -14,9 +16,11 @@
   height: 100%;
   text-align: left;
   /* border: 1px solid black; */
-  background: #343951;
+  /* background: #343951; */
+  background-color: var(--primary-color);
   padding-left: 2%;
-  color: #d0d6db;
+  /* color: #d0d6db; */
+  color: white;
   cursor: default;
   z-index: 2;
   /* display: flex;
@@ -28,9 +32,11 @@
   height: 100%;
   /* text-align: center;
   align-items: center; */
-  background: #343951;
+  /* background: #343951; */
+  background-color: var(--primary-color);
   padding-left: 0.8%;
-  color: #d0d6db;
+  /* color: #d0d6db; */
+  color: white;
   cursor: default;
 }
 .sarvvid_logo {
@@ -46,11 +52,11 @@
 }
 .leftPane_buttons_button {
   margin: 8%;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .leftPane_buttons_button_short {
   margin: 180%;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .leftPane_buttons_button:hover {
   opacity: 1;

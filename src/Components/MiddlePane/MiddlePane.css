@@ -1,5 +1,6 @@
 .middlePane {
   background-color: #ecfaff;
+  /* background-color: var(--secondary-color); */
   width: 67%;
   margin-left: 1.5%;
   margin-right: 1.5%;

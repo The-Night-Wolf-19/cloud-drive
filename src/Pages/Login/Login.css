@@ -118,7 +118,7 @@
   color: #ecfaff;
   height: 50px;
   font-size: 20px;
-  font-family: var(--font-type);
+  /* font-family: var(--font-type); */
   font-weight: 500;
   transition-duration: 0.5s;
   margin-top: 20px;

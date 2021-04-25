@@ -2,8 +2,11 @@
   width: 25%;
   height: 100%;
   /* border: 1px solid white; */
-  background-color: #343951;
-  color: #d0d6db;
+  /* background-color: #343951; */
+  background-color: var(--primary-color);
+  /* background-color: black; */
+  /* color: #d0d6db; */
+  color: white;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 1%;
@@ -55,7 +58,7 @@
   opacity: 0.8;
   z-index: 2;
   position: relative;
-  top: -138px;
+  top: -164px;
   left: 1%;
 }
 .storage_detail_desc {
@@ -74,6 +77,7 @@
   height: 30%;
   width: 23%;
   background-color: #005288;
+  /* background-color: var(--tertiary-color); */
   box-shadow: 5px 5px 4px 5px black;
 }
 .storage_upgrade:hover {
@@ -86,12 +90,68 @@
   font-size: 30px;
   margin: 0%;
 }
-/* .storage_button {
-  background-color: black;
+.storage_button {
+  width: 50%;
+  background: none;
+  border: 2px solid #4dc9ff;
+  color: #ecfaff;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  transition-duration: 0.5s;
+  margin-top: 20px;
+}
+.storage_button:hover {
+  background-color: #04acfe;
+  color: #fff;
+}
+
+.storage_button:focus {
   outline: none;
-} */
+}
+
 .storage_used {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.upgrade_counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.upgrade_arrow {
+  background: var(--primary-color);
+  font-size: 40px;
+  border-radius: 40px;
+}
+.upgrade_cost {
+  font-size: 30px;
+  margin-top: 5%;
+  /* color: var(--primary-color); */
+}
+.upgrade_payment_button {
+  width: 50%;
+  /* background-color: var(--default-color); */
+  background-image: linear-gradient(to bottom right, #00b3ff, white);
+  background-color: #04acfe;
+  border: 2px solid #4dc9ff;
+  color: black;
+  height: 50px;
+  font-size: 20px;
+  /* font-family: var(--font-type); */
+  font-weight: 500;
+  transition-duration: 0.5s;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.upgrade_payment_button:hover {
+  background-color: #04acfe;
+  background-image: none;
+  color: #fff;
+}
+
+.upgrade_payment_button:focus {
+  outline: none;
 }

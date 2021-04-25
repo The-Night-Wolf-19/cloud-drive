@@ -16,8 +16,10 @@
   /* height: 15%; */
   /* margin-right: 0.5%; */
   color: #005288;
+  /* color: white; */
   padding-bottom: 1%;
   background-color: #b2d6f8;
+  /* background-color: var(--secondary-color); */
   /* opacity: 0.9; */
   margin-left: 4%;
   border-radius: 10px;
@@ -32,6 +34,7 @@
   /* height: 110%; */
   /* box-shadow: 5px 5px 4px 5px #005288; */
   box-shadow: 0 0 20px rgb(0, 195, 255);
+  /* box-shadow: 0 0 20px #0f0; */
 }
 
 .card_image {
